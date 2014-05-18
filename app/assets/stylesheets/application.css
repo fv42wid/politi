@@ -11,3 +11,17 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+    padding-top: 40px;
+}
+
+#main_content {
+    width: 80%;
+}
+
+#ads_right_side {
+    float: right;
+    width: 15%;
+    margin-top: 40px;
+}
