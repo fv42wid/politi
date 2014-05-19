@@ -1,5 +1,10 @@
 %h1 New candidate
 
+- flash.each do |key, value|
+  %div{:class => (flash_class(key))}
+    = value
+    /TODO split the error array and show on separate lines
+
 = render 'form'
 
 = link_to 'Back', candidates_path

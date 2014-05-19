@@ -47,6 +47,7 @@ class CandidatesController < ApplicationController
         format.html { redirect_to @candidate, notice: 'Candidate was successfully created.' }
         format.json { render json: @candidate, status: :created, location: @candidate }
       else
+        flash[:error] = @candidate.errors.full_messages
         format.html { render action: "new" }
         format.json { render json: @candidate.errors, status: :unprocessable_entity }
       end
