@@ -1,8 +1,6 @@
 %h1 Candidates
 
-- flash.each do |key, value|
-  %div{:class => (flash_class(key))}
-    = value
+= render :partial => 'layouts/flash_display'
 
 %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
   %tr

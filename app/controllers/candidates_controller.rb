@@ -13,7 +13,15 @@ class CandidatesController < ApplicationController
   # GET /candidates/1
   # GET /candidates/1.json
   def show
-    @candidate = Candidate.find(params[:id])
+    @candidate = Candidate.find_by_id(params[:id])
+
+    if @candidate
+
+    else
+      flash[:error] = "Could not find that candidate"
+      redirect_to candidates_path
+      return
+    end
 
     respond_to do |format|
       format.html # show.html.erb
@@ -44,7 +52,8 @@ class CandidatesController < ApplicationController
 
     respond_to do |format|
       if @candidate.save
-        format.html { redirect_to @candidate, notice: 'Candidate was successfully created.' }
+        flash[:success] = "#{@candidate.name} was successfully created"
+        format.html { redirect_to @candidate }
         format.json { render json: @candidate, status: :created, location: @candidate }
       else
         flash[:error] = @candidate.errors.full_messages
