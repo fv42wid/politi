@@ -1,9 +1,7 @@
-= render :partial => 'layouts/flash_display'
-/TODO make name the title
+%h1= @candidate.name
 
-%p
-  %b Name:
-  = @candidate.name
+= render :partial => 'layouts/flash_display'
+
 %p
   %b Description:
   = @candidate.description
