@@ -12,7 +12,7 @@
     <file path="/_form.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400442255739" ignored="false" />
     <file path="/candidate.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400442364080" ignored="false" />
     <file path="/candidates_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400463136532" ignored="false" />
-    <file path="/new.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400463555281" ignored="false" />
+    <file path="/new.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400546942291" ignored="false" />
     <file path="/show.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400463615178" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,19 +33,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="new.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/candidates/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="58" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.125">
+            <state line="5" column="39" selection-start="150" selection-end="150" vertical-scroll-proportion="0.14071295">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="25" selection-start="43" selection-end="43" vertical-scroll-proportion="0.028142588">
+            <state line="1" column="25" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -71,9 +71,9 @@
         <option value="$PROJECT_DIR$/app/views/candidates/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/candidates/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/candidates/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/candidates/new.html.haml" />
       </list>
     </option>
   </component>
@@ -787,16 +787,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/new.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="58" selection-start="155" selection-end="155" vertical-scroll-proportion="-3.125">
+        <state line="1" column="25" selection-start="43" selection-end="43" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/candidates/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="25" selection-start="43" selection-end="43" vertical-scroll-proportion="0.028142588">
+        <state line="5" column="39" selection-start="150" selection-end="150" vertical-scroll-proportion="0.14071295">
           <folding />
         </state>
       </provider>

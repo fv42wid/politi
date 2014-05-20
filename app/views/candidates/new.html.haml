@@ -2,7 +2,8 @@
 
 - flash.each do |key, value|
   %div{:class => (flash_class(key))}
-    = value
+    /= value.join("<br>")
+    = safe_join(value, "<br>".html_safe)
     /TODO split the error array and show on separate lines
 
 = render 'form'
