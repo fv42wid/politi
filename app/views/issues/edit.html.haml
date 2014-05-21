@@ -1,7 +1,9 @@
 %h1 Editing issue
 
+= render :partial => 'layouts/flash_display'
+
 = render 'form'
 
-= link_to 'Show', @issue
+= link_to 'Show', candidate_issue_path(@candidate, @issue)
 \|
-= link_to 'Back', issues_path
+= link_to 'Back', candidate_path(@candidate)

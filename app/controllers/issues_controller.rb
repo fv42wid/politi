@@ -1,22 +1,37 @@
 class IssuesController < ApplicationController
   #TODO change helper paths to fix issues_path error
-  #TODO update all messages to use flash helper
 
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.all
+    flash[:alert] = "Oops! That page doesn't exist!"
+    redirect_to candidates_path
+    #@issues = Issue.all
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @issues }
-    end
+    #respond_to do |format|
+      #format.html # index.html.erb
+      #format.json { render json: @issues }
+    #end
   end
 
   # GET /issues/1
   # GET /issues/1.json
   def show
-    @issue = Issue.find(params[:id])
+    @issue = Issue.find_by_id(params[:id])
+    @candidate = Candidate.find_by_id(params[:candidate_id])
+
+    if(@candidate.nil? or @issue.nil?)
+      flash[:alert] = "Oops! We couldn't find that"
+
+      if @candidate
+        redirect_to candidate_path(@candidate)
+        return
+      else
+        redirect_to candidates_path
+        return
+      end
+
+    end
 
     respond_to do |format|
       format.html # show.html.erb
@@ -31,6 +46,12 @@ class IssuesController < ApplicationController
     @issue = Issue.new
     @candidate = Candidate.find_by_id(params[:candidate_id])
 
+    if @candidate.nil?
+      flash[:alert] = "Oops! We couldn't find that!"
+      redirect_to candidates_path
+      return
+    end
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @issue }
@@ -39,7 +60,20 @@ class IssuesController < ApplicationController
 
   # GET /issues/1/edit
   def edit
-    @issue = Issue.find(params[:id])
+    @issue = Issue.find_by_id(params[:id])
+    @candidate = Candidate.find_by_id(params[:candidate_id])
+    if(@candidate.nil? or @issue.nil?)
+      flash[:alert] = "Oops! We couldn't find that"
+
+      if @candidate
+        redirect_to candidate_path(@candidate)
+        return
+      else
+        redirect_to candidates_path
+        return
+      end
+
+    end
   end
 
   # POST /issues
@@ -51,7 +85,8 @@ class IssuesController < ApplicationController
 
     respond_to do |format|
       if @issue.save
-        format.html { redirect_to candidate_path(@candidate), notice: 'Issue was successfully created.' }
+        flash[:success] = 'Issue saved!'
+        format.html { redirect_to candidate_path(@candidate) }
         format.json { render json: @issue, status: :created, location: @issue }
       else
         flash[:error] = @issue.errors.full_messages
@@ -65,12 +100,16 @@ class IssuesController < ApplicationController
   # PUT /issues/1.json
   def update
     @issue = Issue.find(params[:id])
+    @candidate = Candidate.find_by_id(params[:candidate_id])
 
     respond_to do |format|
+
       if @issue.update_attributes(params[:issue])
-        format.html { redirect_to @issue, notice: 'Issue was successfully updated.' }
+        flash[:success] = 'Issue saved!'
+        format.html { redirect_to candidate_issue_path(@candidate, @issue) }
         format.json { head :no_content }
       else
+        flash[:error] = @issue.errors.full_messages
         format.html { render action: "edit" }
         format.json { render json: @issue.errors, status: :unprocessable_entity }
       end
@@ -80,11 +119,19 @@ class IssuesController < ApplicationController
   # DELETE /issues/1
   # DELETE /issues/1.json
   def destroy
-    @issue = Issue.find(params[:id])
-    @issue.destroy
+    @issue = Issue.find_by_id(params[:id])
+
+    if @issue.nil?
+      flash[:notice] = "Oops! We couldn't find that"
+      redirect_to candidates_path
+      return
+    else
+      @issue.destroy
+      flash[:success] = "Issue deleted!"
+    end
 
     respond_to do |format|
-      format.html { redirect_to issues_url }
+      format.html { redirect_to candidates_path }
       format.json { head :no_content }
     end
   end

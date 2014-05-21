@@ -1,4 +1,4 @@
-%p#notice= notice
+= render :partial => 'layouts/flash_display'
 
 %p
   %b Title:
@@ -7,6 +7,6 @@
   %b Description:
   = @issue.description
 
-= link_to 'Edit', edit_issue_path(@issue)
+= link_to 'Edit', edit_candidate_issue_path(@candidate, @issue)
 \|
-= link_to 'Back', issues_path
+= link_to 'Back', candidate_path(@candidate)

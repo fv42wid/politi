@@ -12,6 +12,8 @@
 = link_to 'Edit', edit_candidate_path(@candidate)
 \|
 = link_to 'Back', candidates_path
+\|
+= link_to 'Add Issue', new_candidate_issue_path(@candidate)
 
 %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
   - @issues.each do |issue|
