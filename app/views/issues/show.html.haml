@@ -1,11 +1,13 @@
+%h1= @issue.title
+
 = render :partial => 'layouts/flash_display'
 
 %p
-  %b Title:
-  = @issue.title
-%p
   %b Description:
   = @issue.description
+
+%p
+  = link_to @issue.citation, url_helper(@issue.citation), :target => '_blank'
 
 = link_to 'Edit', edit_candidate_issue_path(@candidate, @issue)
 \|

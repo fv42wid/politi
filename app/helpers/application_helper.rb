@@ -11,4 +11,8 @@ module ApplicationHelper
 
   end
 
+  def url_helper(url)
+    /^http/.match(url) ? url : "http://#{url}"
+  end
+
 end
