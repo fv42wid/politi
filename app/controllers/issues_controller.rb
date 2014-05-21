@@ -1,5 +1,6 @@
 class IssuesController < ApplicationController
   #TODO change helper paths to fix issues_path error
+  #TODO update all messages to use flash helper
 
   # GET /issues
   # GET /issues.json
@@ -26,7 +27,9 @@ class IssuesController < ApplicationController
   # GET /issues/new
   # GET /issues/new.json
   def new
+    #debugger
     @issue = Issue.new
+    @candidate = Candidate.find_by_id(params[:candidate_id])
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,12 +46,15 @@ class IssuesController < ApplicationController
   # POST /issues.json
   def create
     @issue = Issue.new(params[:issue])
+    @candidate = Candidate.find_by_id(params[:candidate_id])
+    @issue.candidate_id = @candidate.id
 
     respond_to do |format|
       if @issue.save
-        format.html { redirect_to @issue, notice: 'Issue was successfully created.' }
+        format.html { redirect_to candidate_path(@candidate), notice: 'Issue was successfully created.' }
         format.json { render json: @issue, status: :created, location: @issue }
       else
+        flash[:error] = @issue.errors.full_messages
         format.html { render action: "new" }
         format.json { render json: @issue.errors, status: :unprocessable_entity }
       end
