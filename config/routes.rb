@@ -1,8 +1,7 @@
 Politi::Application.routes.draw do
-  resources :issues
-
-
-  resources :candidates
+  resources :candidates do
+    resources :issues
+  end
 
   root :to => redirect('/candidates')
 
