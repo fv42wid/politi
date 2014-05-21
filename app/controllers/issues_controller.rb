@@ -1,4 +1,5 @@
 class IssuesController < ApplicationController
+  #TODO add for/against to issue model
 
   # GET /issues
   # GET /issues.json

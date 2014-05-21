@@ -15,8 +15,14 @@
 \|
 = link_to 'Add Issue', new_candidate_issue_path(@candidate)
 
-%table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
-  - @issues.each do |issue|
-    %tr
-      %td= link_to issue.title, candidate_issue_path(@candidate, issue)
+%table.table.table-bordered.table-default
+  %tr
+    %th Supports
+    %th Against
+  %tr
+    %td
+      %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
+        - @issues.each do |issue|
+          %tr
+            %td= link_to issue.title, candidate_issue_path(@candidate, issue)
 
