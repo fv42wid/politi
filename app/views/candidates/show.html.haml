@@ -13,4 +13,9 @@
 \|
 = link_to 'Back', candidates_path
 
+%table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
+  - @issues.each do |issue|
+    %tr
+      %td= link_to issue.title, candidate_issue_path(@candidate, issue)
+
 /TODO create issues, nest under candidate

@@ -14,6 +14,7 @@ class CandidatesController < ApplicationController
   # GET /candidates/1.json
   def show
     @candidate = Candidate.find_by_id(params[:id])
+    @issues = Issue.find_all_by_candidate_id(@candidate)
 
     if @candidate
 
