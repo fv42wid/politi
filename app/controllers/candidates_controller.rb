@@ -12,6 +12,7 @@ class CandidatesController < ApplicationController
 
   # GET /candidates/1
   # GET /candidates/1.json
+  #TODO figure out how to display issues
   def show
     @candidate = Candidate.find_by_id(params[:id])
     @issues = Issue.find_all_by_candidate_id(@candidate)

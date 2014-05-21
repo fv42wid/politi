@@ -1,5 +1,4 @@
 class IssuesController < ApplicationController
-  #TODO change helper paths to fix issues_path error
 
   # GET /issues
   # GET /issues.json
