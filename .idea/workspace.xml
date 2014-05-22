@@ -9,7 +9,7 @@
     <file path="/application.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400442448908" ignored="false" />
     <file path="/application.css" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400441738225" ignored="false" />
     <file path="/index.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400462378267" ignored="false" />
-    <file path="/_form.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400686288685" ignored="false" />
+    <file path="/_form.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400719390744" ignored="false" />
     <file path="/candidate.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631583629" ignored="false" />
     <file path="/candidates_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400697046273" ignored="false" />
     <file path="/new.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400685433891" ignored="false" />
@@ -17,9 +17,10 @@
     <file path="/_flash_display.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400549487112" ignored="false" />
     <file path="/edit.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400694367767" ignored="false" />
     <file path="/20140521000110_create_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631522549" ignored="false" />
-    <file path="/issue.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400686372079" ignored="false" />
+    <file path="/issue.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400719213166" ignored="false" />
     <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400698376739" ignored="false" />
     <file path="/application_helper.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400696245513" ignored="false" />
+    <file path="/20140522002808_add_stance_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400718716024" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,19 +40,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
+      <file leaf-file-name="issue.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="59" selection-start="310" selection-end="310" vertical-scroll-proportion="-9.375">
+            <state line="2" column="28" selection-start="85" selection-end="85" vertical-scroll-proportion="0.058252428">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="issues_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="38" selection-start="85" selection-end="85" vertical-scroll-proportion="0.029126214">
+            <state line="7" column="67" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
@@ -67,14 +68,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/candidates/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/layouts/_flash_display.html.haml" />
         <option value="$PROJECT_DIR$/app/views/candidates/edit.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140521000110_create_issues.rb" />
         <option value="$PROJECT_DIR$/app/models/candidate.rb" />
-        <option value="$PROJECT_DIR$/app/views/issues/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/issue.rb" />
         <option value="$PROJECT_DIR$/app/views/issues/new.html.haml" />
         <option value="$PROJECT_DIR$/app/views/issues/edit.html.haml" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
@@ -83,6 +81,9 @@
         <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/candidates/show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140522002808_add_stance_to_issues.rb" />
+        <option value="$PROJECT_DIR$/app/views/issues/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/models/issue.rb" />
       </list>
     </option>
   </component>
@@ -785,21 +786,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="19" selection-end="63" vertical-scroll-proportion="-1.25" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_flash_display.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="203" selection-end="203" vertical-scroll-proportion="0.17857143" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="-0.625" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="44" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
@@ -877,6 +863,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="38" selection-start="85" selection-end="85" vertical-scroll-proportion="0.029126214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140522002808_add_stance_to_issues.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="40" selection-start="103" selection-end="103" vertical-scroll-proportion="0.056818184">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="59" selection-start="310" selection-end="310" vertical-scroll-proportion="-9.375">
@@ -884,9 +884,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/issues/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="85" selection-end="85" vertical-scroll-proportion="0.029126214">
+        <state line="7" column="67" selection-start="194" selection-end="194" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="28" selection-start="85" selection-end="85" vertical-scroll-proportion="0.058252428">
           <folding />
         </state>
       </provider>

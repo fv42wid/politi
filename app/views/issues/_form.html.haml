@@ -4,6 +4,9 @@
     = f.label :title
     = f.text_field :title
   .field
+    = f.label :stance
+    = f.select :stance, Issue::STANCES, :prompt => 'Choose Position'
+  .field
     = f.label :description
     = f.text_area :description, rows: 5, :class => 'input-xxlarge'
   .field
