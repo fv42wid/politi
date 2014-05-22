@@ -17,17 +17,17 @@
 
 %table.table.table-bordered.table-default
   %tr
-    %th Supports
-    %th Against
+    %th.for_issue Supports
+    %th.against_issue Against
   %tr
     %td
-      %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
+      %table.table.table-bordered.table-hover.table-condensed.table-default
         - @for_issues.each do |issue|
           %tr
-            %td= link_to issue.title, candidate_issue_path(@candidate, issue)
+            %td.for_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
     %td
-      %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
+      %table.table.table-bordered.table-hover.table-condensed.table-default
         - @against_issues.each do |issue|
           %tr
-            %td= link_to issue.title, candidate_issue_path(@candidate, issue)
+            %td.against_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
 

@@ -25,3 +25,11 @@ body {
     width: 15%;
     margin-top: 40px;
 }
+
+.for_issue {
+    background-color: #dff0d8;
+}
+
+.against_issue {
+    background-color: #f2dede;
+}
