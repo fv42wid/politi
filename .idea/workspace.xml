@@ -18,7 +18,7 @@
     <file path="/edit.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400694367767" ignored="false" />
     <file path="/20140521000110_create_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631522549" ignored="false" />
     <file path="/issue.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400719213166" ignored="false" />
-    <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400698376739" ignored="false" />
+    <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400721210434" ignored="false" />
     <file path="/application_helper.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400696245513" ignored="false" />
     <file path="/20140522002808_add_stance_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400718716024" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,19 +40,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="21" selection-start="408" selection-end="408" vertical-scroll-proportion="0.5417515">
+            <state line="20" column="21" selection-start="408" selection-end="408" vertical-scroll-proportion="-11.083333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <file leaf-file-name="issues_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="30" selection-start="786" selection-end="786" vertical-scroll-proportion="0.0">
+            <state line="1" column="51" selection-start="98" selection-end="98" vertical-scroll-proportion="0.045045044">
               <folding />
             </state>
           </provider>
@@ -77,13 +77,13 @@
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/issues/show.html.haml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-        <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140522002808_add_stance_to_issues.rb" />
         <option value="$PROJECT_DIR$/app/views/issues/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/models/issue.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/candidates/show.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
       </list>
     </option>
   </component>
@@ -707,7 +707,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32616487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32616487" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28236914" sideWeight="0.6738351" order="0" side_tool="false" content_ui="combo" />
@@ -856,23 +856,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="38" selection-start="85" selection-end="85" vertical-scroll-proportion="0.029126214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="28" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/candidates_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="84" selection-start="580" selection-end="580" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -891,9 +877,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/candidates_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="26" selection-start="313" selection-end="313" vertical-scroll-proportion="0.35435435">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="21" selection-start="408" selection-end="408" vertical-scroll-proportion="0.5417515">
+        <state line="20" column="21" selection-start="408" selection-end="408" vertical-scroll-proportion="-11.083333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="51" selection-start="98" selection-end="98" vertical-scroll-proportion="0.045045044">
           <folding />
         </state>
       </provider>

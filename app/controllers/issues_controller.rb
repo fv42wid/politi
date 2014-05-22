@@ -1,5 +1,5 @@
 class IssuesController < ApplicationController
-  #TODO add for/against to issue model
+  #TODO figure out data model for conflicted issues
 
   # GET /issues
   # GET /issues.json
