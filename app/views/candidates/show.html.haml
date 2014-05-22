@@ -22,7 +22,12 @@
   %tr
     %td
       %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
-        - @issues.each do |issue|
+        - @for_issues.each do |issue|
+          %tr
+            %td= link_to issue.title, candidate_issue_path(@candidate, issue)
+    %td
+      %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
+        - @against_issues.each do |issue|
           %tr
             %td= link_to issue.title, candidate_issue_path(@candidate, issue)
 

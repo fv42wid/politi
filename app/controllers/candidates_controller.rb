@@ -15,7 +15,8 @@ class CandidatesController < ApplicationController
   #TODO figure out how to display issues
   def show
     @candidate = Candidate.find_by_id(params[:id])
-    @issues = Issue.find_all_by_candidate_id(@candidate)
+    @for_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "FOR")
+    @against_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "AGAINST")
 
     if @candidate
 
