@@ -14,6 +14,9 @@ class CandidatesController < ApplicationController
   # GET /candidates/1.json
   def show
     @candidate = Candidate.find_by_id(params[:id])
+    if @candidate.image_url.nil?
+      @candidate.image_url = 'anonymous.png'
+    end
     @for_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "FOR")
     @against_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "AGAINST")
 
