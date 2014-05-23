@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140523184332) do
+ActiveRecord::Schema.define(:version => 20140523184927) do
 
   create_table "candidates", :force => true do |t|
     t.string   "name"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(:version => 20140523184332) do
     t.string   "conflict_title"
     t.text     "conflict_description"
     t.integer  "conflict_owner_id"
+    t.string   "conflict_citation"
   end
 
 end
