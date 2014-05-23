@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140522002808) do
+ActiveRecord::Schema.define(:version => 20140523184332) do
 
   create_table "candidates", :force => true do |t|
     t.string   "name"
@@ -26,9 +26,12 @@ ActiveRecord::Schema.define(:version => 20140522002808) do
     t.text     "description"
     t.string   "citation"
     t.integer  "candidate_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",           :null => false
+    t.datetime "updated_at",           :null => false
     t.string   "stance"
+    t.string   "conflict_title"
+    t.text     "conflict_description"
+    t.integer  "conflict_owner_id"
   end
 
 end
