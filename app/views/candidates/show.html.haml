@@ -1,13 +1,16 @@
-%h1= @candidate.name
+%div
+  = image_tag @candidate.image_url, :size => "230x230"
+
+  %h1.image_name= @candidate.name
 
 = render :partial => 'layouts/flash_display'
 
-%p
-  %b Description:
-  = @candidate.description
-%p
-  %b Image url:
-  = @candidate.image_url
+%div
+  %p.description
+    %b Description:
+    = @candidate.description
+
+
 
 = link_to 'Edit', edit_candidate_path(@candidate)
 \|

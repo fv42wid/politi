@@ -33,3 +33,14 @@ body {
 .against_issue {
     background-color: #f2dede;
 }
+
+.description {
+    padding-top: 10px;
+
+}
+
+.image_name {
+    display: inline;
+    vertical-align: top;
+    padding-left: 20px;
+}
