@@ -1,0 +1,13 @@
+= form_for [@candidate, @issue] do |f|
+
+  .field
+    = f.label :conflict_title
+    = f.text_field :conflict_title
+  .field
+    = f.label :conflict_description
+    = f.text_area :conflict_description, rows: 5, :class => 'input-xxlarge'
+  .field
+    = f.label :conflict_citation
+    = f.text_field :conflict_citation
+  .actions
+    = f.submit 'Save'

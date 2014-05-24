@@ -116,6 +116,12 @@ class IssuesController < ApplicationController
     end
   end
 
+  def conflict
+    @issue = Issue.find_by_id(params[:id])
+    @candidate = Candidate.find_by_id(params[:candidate_id])
+
+  end
+
   # DELETE /issues/1
   # DELETE /issues/1.json
   def destroy

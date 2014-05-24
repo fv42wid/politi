@@ -1,0 +1,9 @@
+%h1= "Conflict #{@issue.title}"
+
+= render :partial => 'layouts/flash_display'
+
+= render 'conflict_form'
+
+= link_to 'Show', candidate_issue_path(@candidate, @issue)
+\|
+= link_to 'Back', candidate_path(@candidate)
