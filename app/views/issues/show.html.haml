@@ -5,6 +5,22 @@
 %p
   %b Description:
   = @issue.description
+%p
+  %b Citation:
+  = @issue.citation
+
+- if @issue.conflict_title
+  %p
+    %h3 Conflict
+  %p
+    %b Conflict:
+    = @issue.conflict_title
+  %p
+    %b Description:
+    = @issue.conflict_description
+  %p
+    %b Citation:
+    = @issue.conflict_citation
 
 %p
   = link_to @issue.citation, url_helper(@issue.citation), :target => '_blank'

@@ -1,5 +1,6 @@
 class IssuesController < ApplicationController
-  #TODO add action for adding conflict
+  #TODO add validation for conflict, validate presence
+  #TODO figure out display of conflicted issues
 
   # GET /issues
   # GET /issues.json
