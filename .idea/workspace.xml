@@ -13,7 +13,7 @@
     <file path="/candidate.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631583629" ignored="false" />
     <file path="/candidates_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400859906341" ignored="false" />
     <file path="/new.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400685433891" ignored="false" />
-    <file path="/show.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400964040375" ignored="false" />
+    <file path="/show.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400964406841" ignored="false" />
     <file path="/_flash_display.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400549487112" ignored="false" />
     <file path="/edit.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400694367767" ignored="false" />
     <file path="/20140521000110_create_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631522549" ignored="false" />
@@ -56,7 +56,7 @@
       <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/issues/show.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="19" selection-start="146" selection-end="146" vertical-scroll-proportion="0.2596154">
+            <state line="30" column="2" selection-start="583" selection-end="583" vertical-scroll-proportion="0.86538464">
               <folding />
             </state>
           </provider>
@@ -893,7 +893,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/issues/show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="19" selection-start="146" selection-end="146" vertical-scroll-proportion="0.2596154">
+        <state line="30" column="2" selection-start="583" selection-end="583" vertical-scroll-proportion="0.86538464">
           <folding />
         </state>
       </provider>
