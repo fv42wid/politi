@@ -1,6 +1,9 @@
 class IssuesController < ApplicationController
-  #TODO add validation for conflict, validate presence
   #TODO figure out display of conflicted issues
+  #TODO create users
+  #TODO use links in application layout
+
+  before_filter :check_conflict_attributes, :only => 'update'
 
   # GET /issues
   # GET /issues.json
@@ -142,4 +145,29 @@ class IssuesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+    def check_conflict_attributes
+      if request.referrer == conflict_candidate_issue_url
+        issue = Issue.new(params[:issue])
+        errors = 0
+
+        if issue.conflict_title.empty?
+          flash[:error] = "Conflict title can't be empty"
+          errors += 1
+        elsif issue.conflict_description.empty?
+          flash[:error] = "Conflict description can't be empty"
+          errors += 1
+        elsif issue.conflict_citation.empty?
+          flash[:error] = "Conflict citation can't be empty"
+          errors += 1
+        end
+
+        if errors > 0
+          redirect_to conflict_candidate_issue_path(params[:candidate_id,], params[:id], @issue)
+        end
+      end
+    end
+
 end
