@@ -26,8 +26,9 @@ class CandidatesController < ApplicationController
     if @candidate.image_url.nil?
       @candidate.image_url = 'anonymous.png'
     end
-    @for_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "FOR")
+    @for_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "SUPPORTS")
     @against_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "AGAINST")
+    @conflict_issues = Issue.find_all_by_candidate_id_and_stance(@candidate, "CONFLICT")
 
     respond_to do |format|
       format.html # show.html.erb

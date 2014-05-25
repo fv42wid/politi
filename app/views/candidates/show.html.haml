@@ -34,4 +34,13 @@
           %tr
             %td.against_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
   %tr
-    %th.issue_header{:colspan => 2} Conflicted
+    %th.conflict_issue{:colspan => 2}
+      %div.text-center Conflicted
+  %tr
+    %td{:colspan => 2}
+      %table.table.table-bordered.table-hover.table-condensed.table-default
+        - @conflict_issues.each do |issue|
+          %tr
+            %td.conflict_issue
+              %div.text-center= link_to issue.title, candidate_issue_path(@candidate, issue)
+

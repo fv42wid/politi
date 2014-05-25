@@ -1,5 +1,4 @@
 class IssuesController < ApplicationController
-  #TODO figure out display of conflicted issues
   #TODO create users
   #TODO use links in application layout
   #TODO put ads in
@@ -106,6 +105,10 @@ class IssuesController < ApplicationController
   def update
     @issue = Issue.find(params[:id])
     @candidate = Candidate.find_by_id(params[:candidate_id])
+
+    if request.referer == conflict_candidate_issue_url
+      @issue.stance = "CONFLICT"
+    end
 
     respond_to do |format|
 
