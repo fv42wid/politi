@@ -2,6 +2,7 @@ class IssuesController < ApplicationController
   #TODO figure out display of conflicted issues
   #TODO create users
   #TODO use links in application layout
+  #TODO put ads in
 
   before_filter :check_conflict_attributes, :only => 'update'
 
