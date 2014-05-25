@@ -33,4 +33,5 @@
         - @against_issues.each do |issue|
           %tr
             %td.against_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
-
+  %tr
+    %th.issue_header{:colspan => 2} Conflicted
