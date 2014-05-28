@@ -1,5 +1,5 @@
 class IssuesController < ApplicationController
-  #TODO create users
+  #TODO fix logout display
   #TODO use links in application layout
   #TODO put ads in
 
