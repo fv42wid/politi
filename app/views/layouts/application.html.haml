@@ -27,14 +27,15 @@
                 %a{:href => '#'} About
               %li
                 %a{:href => '#'} Contact
-              - if user_signed_in?
-                %li
-                  = "Hello #{current_user.email}"
-                  = link_to 'Log out', destroy_user_session_path, :method => 'delete'
+            - if user_signed_in?
+              %div.pull-right
+                /%span= (current_user.email + "|" + (link_to 'Log out', destroy_user_session_path)).html_safe
+                /%span= ("Hello #{current_user.email} | " + link_to('Log out', destroy_user_session_path)).html_safe
+                %p= (link_to 'Log out', destroy_user_session_path, :method => 'delete')+"HI"
 
-              - else
-                %li
-                  = link_to 'Login', new_user_session_path
+            - else
+              %div.pull-right
+                = link_to 'Login', new_user_session_path
     %div.container
       %div#ads_right_side
         %h2 Google

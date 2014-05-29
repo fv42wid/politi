@@ -53,3 +53,7 @@ body {
 .conflict_issue th {
     text-align: center;
 }
+
+.login_nav {
+    margin-top: 4px;
+}
