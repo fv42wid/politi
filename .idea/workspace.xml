@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401153978536" ignored="false" />
     <file path="/routes.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400962916845" ignored="false" />
-    <file path="/application.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401327737462" ignored="false" />
+    <file path="/application.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401328074411" ignored="false" />
     <file path="/application.css" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401327439901" ignored="false" />
     <file path="/index.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400462378267" ignored="false" />
     <file path="/_form.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400719390744" ignored="false" />
@@ -49,7 +49,7 @@
       <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="29" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.7148676">
+            <state line="33" column="113" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.62321794">
               <folding />
             </state>
           </provider>
@@ -903,7 +903,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.7148676">
+        <state line="33" column="113" selection-start="1312" selection-end="1312" vertical-scroll-proportion="0.62321794">
           <folding />
         </state>
       </provider>
