@@ -1,5 +1,5 @@
 class IssuesController < ApplicationController
-  #TODO fix logout display
+  #TODO use flash messages in user controller
   #TODO use links in application layout
   #TODO put ads in
 
