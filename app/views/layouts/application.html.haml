@@ -18,15 +18,15 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.brand{:href => '#'} Project Name
+          %a.brand{:href => root_path} politicly
           %div.nav-collapse.collapse
             %ul.nav
               %li{:class => "#{'active' if current_page?(candidates_path)}"}
                 %a{:href => root_path} Home
               %li
-                %a{:href => '#'} About
+                %a{:href => '/about.html'} About
               %li
-                %a{:href => '#'} Contact
+                %a{:href => '/contact.html'} Contact
             - if user_signed_in?
               %div.pull-right
                 /%span= (current_user.email + "|" + (link_to 'Log out', destroy_user_session_path)).html_safe

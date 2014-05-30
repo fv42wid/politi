@@ -1,6 +1,6 @@
 class IssuesController < ApplicationController
-  #TODO use flash messages in user controller
-  #TODO use links in application layout
+  #TODO use links in application layout(selected tab)
+  #TODO content in about and contact
   #TODO put ads in
 
   before_filter :check_conflict_attributes, :only => 'update'
