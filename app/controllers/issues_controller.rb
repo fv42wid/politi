@@ -1,5 +1,4 @@
 class IssuesController < ApplicationController
-  #TODO page title
   #TODO content in about and contact
   #TODO put ads in
   #TODO paginate
