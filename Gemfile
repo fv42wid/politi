@@ -8,6 +8,7 @@ gem 'rails', '3.2.14'
 gem 'sqlite3'
 gem 'haml-rails', '= 0.3.4'
 gem 'devise'
+gem 'will_paginate', '~> 3.0'
 
 group :development, :test do
   gem 'rspec-rails'
