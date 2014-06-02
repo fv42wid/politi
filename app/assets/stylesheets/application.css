@@ -17,12 +17,12 @@ body {
 }
 
 #main_content {
-    width: 80%;
+    width: 70%;
 }
 
 #ads_right_side {
     float: right;
-    width: 15%;
+    width: 25%;
     margin-top: 40px;
 }
 

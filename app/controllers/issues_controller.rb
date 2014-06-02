@@ -1,6 +1,5 @@
 class IssuesController < ApplicationController
   #TODO content in about and contact
-  #TODO put ads in
   #TODO search
 
   before_filter :check_conflict_attributes, :only => 'update'
