@@ -1,5 +1,6 @@
 class IssuesController < ApplicationController
   #TODO content in about and contact
+  #TODO send email on registration
   #TODO search
 
   before_filter :check_conflict_attributes, :only => 'update'

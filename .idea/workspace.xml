@@ -18,7 +18,7 @@
     <file path="/edit.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400694367767" ignored="false" />
     <file path="/20140521000110_create_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631522549" ignored="false" />
     <file path="/issue.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400963570450" ignored="false" />
-    <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401497937812" ignored="false" />
+    <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401672832631" ignored="false" />
     <file path="/application_helper.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400696245513" ignored="false" />
     <file path="/20140522002808_add_stance_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400718716024" ignored="false" />
     <file path="/20140523184332_add_conflict_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400870721505" ignored="false" />
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="issues_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="36" selection-start="83" selection-end="83" vertical-scroll-proportion="0.029126214">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -829,11 +829,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/candidates/new.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="44" selection-start="19" selection-end="63" vertical-scroll-proportion="-1.25" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/shared/_links.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="29" selection-start="147" selection-end="147" vertical-scroll-proportion="0.122199595" />
@@ -903,6 +898,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="118" selection-end="118" vertical-scroll-proportion="0.058252428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="25" selection-start="1517" selection-end="1517" vertical-scroll-proportion="-11.083333">
@@ -910,9 +912,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="36" selection-start="83" selection-end="83" vertical-scroll-proportion="0.029126214">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
