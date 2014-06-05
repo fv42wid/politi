@@ -1,6 +1,5 @@
 class IssuesController < ApplicationController
   #TODO content in about and contact
-  #TODO put ads in about and contact
   #TODO edit confirmation email
   #TODO search
 

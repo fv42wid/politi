@@ -53,23 +53,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <file leaf-file-name="issues_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="25" selection-start="1517" selection-end="1517" vertical-scroll-proportion="-11.083333">
+            <state line="1" column="36" selection-start="83" selection-end="83" vertical-scroll-proportion="0.029126214">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="contact.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/contact.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="17" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.93890023">
-              <folding>
-                <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ins#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -97,9 +85,9 @@
         <option value="$PROJECT_DIR$/db/migrate/20140603010517_add_confirmation_to_users.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140603012010_add_unconfirmed_email_to_users.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
         <option value="$PROJECT_DIR$/public/about.html" />
         <option value="$PROJECT_DIR$/public/contact.html" />
+        <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
       </list>
     </option>
   </component>
@@ -909,14 +897,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+    <entry file="file://$PROJECT_DIR$/public/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="36" selection-start="120" selection-end="120" vertical-scroll-proportion="0.058252428">
-          <folding />
+        <state line="82" column="17" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.93890023">
+          <folding>
+            <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ins#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/about.html">
+    <entry file="file://$PROJECT_DIR$/public/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="17" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.93890023">
           <folding>
@@ -928,18 +919,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="25" selection-start="1517" selection-end="1517" vertical-scroll-proportion="-11.083333">
+        <state line="39" column="25" selection-start="1517" selection-end="1517" vertical-scroll-proportion="0.5417515">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/contact.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="17" selection-start="4529" selection-end="4529" vertical-scroll-proportion="0.93890023">
-          <folding>
-            <element signature="n#style#0;n#ins#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ins#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="1" column="36" selection-start="83" selection-end="83" vertical-scroll-proportion="0.029126214">
+          <folding />
         </state>
       </provider>
     </entry>
