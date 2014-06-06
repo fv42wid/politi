@@ -8,15 +8,7 @@
     = submit_tag "Search", :name => nil
 
 %div#candidates
-  %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
-    %tr
-      %th Name
-      %th Description
-
-    - @candidates.each do |candidate|
-      %tr
-        %td= link_to candidate.name, candidate_path(candidate)
-        %td= candidate.description
+  = render :partial => 'candidates'
 
 %br
 
