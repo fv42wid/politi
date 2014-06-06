@@ -2,6 +2,10 @@
 
 = render :partial => 'layouts/flash_display'
 
+= form_tag candidates_path, :method => 'get' do
+  = text_field_tag :search, params[:search]
+  = submit_tag "Search", :name => nil
+
 %table.table.table-striped.table-bordered.table-hover.table-condensed.table-default
   %tr
     %th Name
