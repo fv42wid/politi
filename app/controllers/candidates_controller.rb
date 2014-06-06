@@ -2,7 +2,7 @@ class CandidatesController < ApplicationController
   # GET /candidates
   # GET /candidates.json
   def index
-    @candidates = Candidate.paginate page: params[:page], order: 'updated_at', per_page: 10
+    @candidates = Candidate.search(params[:search]).paginate page: params[:page], order: 'updated_at', per_page: 10
 
     respond_to do |format|
       format.html # index.html.erb
