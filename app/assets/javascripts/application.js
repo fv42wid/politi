@@ -17,7 +17,8 @@
 $(document).ready(function(){
 
     $('#candidate_search').submit(function() {
-        $.get(this.action, $(this).serialize(), null, "script");
+        //alert($(this).serialize());
+        $.get(this.action, $(this).serialize(), null, 'script');
         return false;
     });
 });

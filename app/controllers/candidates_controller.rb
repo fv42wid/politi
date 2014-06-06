@@ -4,10 +4,10 @@ class CandidatesController < ApplicationController
   def index
     @candidates = Candidate.search(params[:search]).paginate page: params[:page], order: 'updated_at', per_page: 10
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @candidates }
-    end
+    #respond_to do |format|
+      #format.html # index.html.erb
+      #format.json { render json: @candidates }
+    #end
   end
 
   # GET /candidates/1
