@@ -87,6 +87,7 @@ class IssuesController < ApplicationController
     @issue = Issue.new(params[:issue])
     @candidate = Candidate.find_by_id(params[:candidate_id])
     @issue.candidate_id = @candidate.id
+    @issue.conflict_owner_id = current_user[:id]
 
     respond_to do |format|
       if @issue.save

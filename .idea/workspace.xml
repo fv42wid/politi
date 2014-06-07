@@ -17,8 +17,8 @@
     <file path="/_flash_display.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400549487112" ignored="false" />
     <file path="/edit.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400694367767" ignored="false" />
     <file path="/20140521000110_create_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400631522549" ignored="false" />
-    <file path="/issue.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400963570450" ignored="false" />
-    <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402158310405" ignored="false" />
+    <file path="/issue.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402174034367" ignored="false" />
+    <file path="/issues_controller.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402174238470" ignored="false" />
     <file path="/application_helper.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400696245513" ignored="false" />
     <file path="/20140522002808_add_stance_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400718716024" ignored="false" />
     <file path="/20140523184332_add_conflict_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400870721505" ignored="false" />
@@ -58,7 +58,16 @@
       <file leaf-file-name="issues_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.08064516">
+            <state line="85" column="12" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.26881722">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="issue.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="75" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,7 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/adsense.html" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
@@ -89,13 +97,14 @@
         <option value="$PROJECT_DIR$/app/views/candidates/index.js.haml" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/candidates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/issue.rb" />
         <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="563" />
-    <option name="y" value="62" />
+    <option name="x" value="539" />
+    <option name="y" value="81" />
     <option name="width" value="778" />
     <option name="height" value="703" />
   </component>
@@ -443,8 +452,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -584,6 +593,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
       <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
       <module name="" />
@@ -617,13 +633,6 @@
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
       <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
@@ -778,14 +787,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="563" y="62" width="778" height="703" extended-state="0" />
+    <frame x="539" y="81" width="778" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32437277" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35164836" sideWeight="0.67562723" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36263737" sideWeight="0.67562723" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -861,11 +870,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20140603012010_add_unconfirmed_email_to_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="50" selection-start="122" selection-end="122" vertical-scroll-proportion="0.058252428" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140527234515_devise_create_users.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="19" selection-start="787" selection-end="805" vertical-scroll-proportion="0.33009708" />
@@ -900,23 +904,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1901.3253">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1901.3253" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/_candidates.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="235" selection-end="235" vertical-scroll-proportion="0.23076923">
-          <folding />
-        </state>
+        <state line="8" column="6" selection-start="235" selection-end="235" vertical-scroll-proportion="0.23076923" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="-10.0">
-          <folding />
-        </state>
+        <state line="16" column="0" selection-start="349" selection-end="349" vertical-scroll-proportion="-10.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/candidate.rb">
@@ -928,37 +926,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/candidates/index.js.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.028846154">
-          <folding />
-        </state>
+        <state line="1" column="0" selection-start="68" selection-end="68" vertical-scroll-proportion="0.028846154" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="51" selection-start="814" selection-end="814" vertical-scroll-proportion="0.5514706">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="20" column="51" selection-start="814" selection-end="814" vertical-scroll-proportion="0.5514706" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/candidates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="9" selection-start="2837" selection-end="2837" vertical-scroll-proportion="0.48924732">
+        <state line="103" column="9" selection-start="2837" selection-end="2837" vertical-scroll-proportion="0.48924732" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/issue.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="75" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.08064516">
+        <state line="85" column="12" selection-start="1988" selection-end="1988" vertical-scroll-proportion="0.26881722">
           <folding />
         </state>
       </provider>
