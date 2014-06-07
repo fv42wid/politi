@@ -1,6 +1,9 @@
 class CandidatesController < ApplicationController
   # GET /candidates
   # GET /candidates.json
+
+  before_filter :check_user_logged_in, :only => [:new, :create, :edit, :update, :destroy]
+
   def index
     @candidates = Candidate.search(params[:search]).paginate page: params[:page], order: 'updated_at', per_page: 10
 
@@ -97,4 +100,17 @@ class CandidatesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+    def check_user_logged_in
+      if user_signed_in?
+
+      else
+        flash[:alert] = "You have to sign in to do that!"
+        redirect_to candidates_path
+      end
+    end
+
+
 end

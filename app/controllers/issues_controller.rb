@@ -1,10 +1,10 @@
 class IssuesController < ApplicationController
   #TODO content in about and contact
   #TODO edit confirmation email
-  #TODO before filter on adding/editing candidates/issues
-
+  #TODO store user that creates candidate, issue
 
   before_filter :check_conflict_attributes, :only => 'update'
+  before_filter :check_user_logged_in, :only => [:new, :create, :edit, :update, :destroy]
 
   # GET /issues
   # GET /issues.json
@@ -172,6 +172,15 @@ class IssuesController < ApplicationController
         if errors > 0
           redirect_to conflict_candidate_issue_path(params[:candidate_id,], params[:id], @issue)
         end
+      end
+    end
+
+    def check_user_logged_in
+      if user_signed_in?
+
+      else
+        flash[:alert] = "You have to sign in to do that!"
+        redirect_to candidate_path(params[:candidate_id])
       end
     end
 
