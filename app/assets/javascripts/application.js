@@ -16,9 +16,9 @@
 
 $(document).ready(function(){
 
-    $('#candidate_search').submit(function() {
+    $('#candidate_search input').keyup(function() {
         //alert($(this).serialize());
-        $.get(this.action, $(this).serialize(), null, 'script');
+        $.get($('#candidate_search').attr('action'), $('#candidate_search').serialize(), null, 'script');
         return false;
     });
 });

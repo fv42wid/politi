@@ -1,7 +1,6 @@
 class IssuesController < ApplicationController
   #TODO content in about and contact
   #TODO edit confirmation email
-  #TODO search
   #TODO before filter on adding/editing candidates/issues
 
 
