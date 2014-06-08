@@ -1,5 +1,4 @@
 class IssuesController < ApplicationController
-  #TODO edit confirmation email
 
   before_filter :check_conflict_attributes, :only => 'update'
   before_filter :check_user_logged_in, :only => [:new, :create, :edit, :update, :destroy]
