@@ -1,7 +1,6 @@
 class IssuesController < ApplicationController
   #TODO content in about and contact
   #TODO edit confirmation email
-  #TODO store user that creates candidate, issue
 
   before_filter :check_conflict_attributes, :only => 'update'
   before_filter :check_user_logged_in, :only => [:new, :create, :edit, :update, :destroy]
