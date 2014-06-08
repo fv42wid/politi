@@ -20,6 +20,7 @@ group :development, :test do
   gem 'cucumber-rails', :require => false
   gem 'capybara'
   gem 'sqlite3'
+  gem 'debugger'
 end
 
 
@@ -50,4 +51,4 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+

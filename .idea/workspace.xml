@@ -72,7 +72,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="15" selection-start="398" selection-end="398" vertical-scroll-proportion="0.5645161">
+            <state line="22" column="16" selection-start="415" selection-end="415" vertical-scroll-proportion="0.42293906">
               <folding />
             </state>
           </provider>
@@ -108,8 +108,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="682" />
-    <option name="y" value="63" />
+    <option name="x" value="569" />
+    <option name="y" value="62" />
     <option name="width" value="778" />
     <option name="height" value="703" />
   </component>
@@ -822,7 +822,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="682" y="63" width="778" height="703" extended-state="0" />
+    <frame x="569" y="62" width="778" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1012,7 +1012,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="15" selection-start="398" selection-end="398" vertical-scroll-proportion="0.5645161">
+        <state line="22" column="16" selection-start="415" selection-end="415" vertical-scroll-proportion="0.42293906">
           <folding />
         </state>
       </provider>
