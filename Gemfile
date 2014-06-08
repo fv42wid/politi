@@ -5,15 +5,21 @@ gem 'rails', '3.2.14'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+
 gem 'haml-rails', '= 0.3.4'
 gem 'devise'
 gem 'will_paginate', '~> 3.0'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'capybara'
+  gem 'sqlite3'
 end
 
 
