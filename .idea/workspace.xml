@@ -40,7 +40,7 @@
     <file path="/devise.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402243545779" ignored="false" />
     <file path="/confirmation_instructions.html.erb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402243915546" ignored="false" />
     <file path="/devise.en.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402244737745" ignored="false" />
-    <file path="/database.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402255930491" ignored="false" />
+    <file path="/database.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402282732446" ignored="false" />
     <file path="/application.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402257482007" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +70,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <file leaf-file-name="database.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="49" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.78494626">
+            <state line="31" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.879017">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="16" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,15 +111,15 @@
         <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
         <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="569" />
-    <option name="y" value="62" />
+    <option name="y" value="61" />
     <option name="width" value="778" />
     <option name="height" value="703" />
   </component>
@@ -140,6 +149,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -488,7 +498,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -823,14 +832,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="569" y="62" width="778" height="703" extended-state="0" />
+    <frame x="569" y="61" width="778" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32437277" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36263737" sideWeight="0.67562723" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37465563" sideWeight="0.67562723" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -908,98 +917,74 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/controllers/candidates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="44" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.31003585">
-          <folding />
-        </state>
+        <state line="61" column="44" selection-start="1625" selection-end="1625" vertical-scroll-proportion="0.31003585" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/contact.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="110" column="58" selection-start="5806" selection-end="5806" vertical-scroll-proportion="0.8876405">
-          <folding />
-        </state>
+        <state line="110" column="58" selection-start="5806" selection-end="5806" vertical-scroll-proportion="0.8876405" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="8" selection-start="5682" selection-end="6116" vertical-scroll-proportion="0.71910113">
-          <folding />
-        </state>
+        <state line="114" column="8" selection-start="5682" selection-end="6116" vertical-scroll-proportion="0.71910113" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-5.3172045">
-          <folding />
-        </state>
+        <state line="27" column="35" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-5.3172045" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="0" selection-start="5382" selection-end="5382" vertical-scroll-proportion="-2182.0913">
-          <folding />
-        </state>
+        <state line="96" column="0" selection-start="5382" selection-end="5382" vertical-scroll-proportion="-2182.0913" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.525394">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.525394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="52" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.53763443">
-          <folding />
-        </state>
+        <state line="20" column="52" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.53763443" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="25" selection-start="544" selection-end="544" vertical-scroll-proportion="0.5913978">
-          <folding />
-        </state>
+        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="415" selection-end="415" vertical-scroll-proportion="0.5913978">
+        <state line="20" column="16" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="49" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.7920605">
           <folding />
         </state>
       </provider>
@@ -1011,9 +996,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="49" selection-start="2850" selection-end="2850" vertical-scroll-proportion="0.78494626">
+        <state line="31" column="0" selection-start="683" selection-end="683" vertical-scroll-proportion="0.879017">
           <folding />
         </state>
       </provider>

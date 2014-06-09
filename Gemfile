@@ -19,7 +19,6 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'cucumber-rails', :require => false
   gem 'capybara'
-  gem 'sqlite3'
   gem 'debugger'
 end
 
