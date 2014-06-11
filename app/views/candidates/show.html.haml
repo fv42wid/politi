@@ -1,22 +1,23 @@
-%div
-  = image_tag @candidate.image_url, :size => "230x230"
+%div.tooTall
+  %div#candidateNameDiv
+    %h1.image_name= @candidate.name
+  %div.row-fluid
+    %div.candidateImage.span4
+      = image_tag @candidate.image_url, :size => "230x230"
+    %div.candidateDescriptionDiv.span8
+      %p.description
+        %b Description:
+        = @candidate.description
 
-  %h1.image_name= @candidate.name
+%div.candidateBottom
 
-= render :partial => 'layouts/flash_display'
+  = render :partial => 'layouts/flash_display'
 
-%div
-  %p.description
-    %b Description:
-    = @candidate.description
-
-
-
-= link_to 'Edit', edit_candidate_path(@candidate)
-\|
-= link_to 'Back', candidates_path
-\|
-= link_to 'Add Issue', new_candidate_issue_path(@candidate)
+  = link_to 'Edit', edit_candidate_path(@candidate)
+  \|
+  = link_to 'Back', candidates_path
+  \|
+  = link_to 'Add Issue', new_candidate_issue_path(@candidate)
 
 %table.table.table-bordered.table-default
   %tr
