@@ -6,15 +6,15 @@ Politi::Application.initialize!
 
 Politi::Application.configure do
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-      address: "smtp.zoho.com",
-      port: 465,
-      domain: "politicly.org",
-      authentication: "plain",
-      user_name: "info@politicly.org",
-      password: "imsMay33",
-      enable_starttls_auto: true,
-      ssl: true,
-      tls: true
-  }
+
 end
+
+ActionMailer::Base.smtp_settings = {
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
+    :authentication => :plain,
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD'],
+    :domain         => 'heroku.com',
+    :enable_starttls_auto => true
+}
