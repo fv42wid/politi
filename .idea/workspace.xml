@@ -42,7 +42,7 @@
     <file path="/devise.en.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402244737745" ignored="false" />
     <file path="/database.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402282732446" ignored="false" />
     <file path="/application.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402257482007" ignored="false" />
-    <file path="/production.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402285410604" ignored="false" />
+    <file path="/production.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402444987052" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="43" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.8217822">
+            <state line="68" column="98" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.8582231">
               <folding />
             </state>
           </provider>
@@ -103,14 +103,14 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_analytics.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="569" />
+    <option name="x" value="570" />
     <option name="y" value="61" />
     <option name="width" value="778" />
     <option name="height" value="703" />
@@ -842,7 +842,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="569" y="61" width="778" height="703" extended-state="0" />
+    <frame x="570" y="61" width="778" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -925,11 +925,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="35" selection-start="1428" selection-end="1428" vertical-scroll-proportion="-5.3172045" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -953,11 +948,6 @@
     <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="0" selection-start="5382" selection-end="5382" vertical-scroll-proportion="-2182.0913" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.525394" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/devise.en.yml">
@@ -998,9 +988,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="30" selection-start="639" selection-end="639" vertical-scroll-proportion="0.4820416">
+        <state line="48" column="43" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.8217822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="525" selection-end="525" vertical-scroll-proportion="0.56710774">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.27599245">
           <folding />
         </state>
       </provider>
@@ -1012,9 +1016,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="43" selection-start="1699" selection-end="1699" vertical-scroll-proportion="0.8217822">
+        <state line="68" column="98" selection-start="2632" selection-end="2632" vertical-scroll-proportion="0.8582231">
           <folding />
         </state>
       </provider>
