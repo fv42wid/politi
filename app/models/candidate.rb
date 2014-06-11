@@ -1,5 +1,5 @@
 class Candidate < ActiveRecord::Base
-  has_many :issues
+  has_many :issues, :dependent => :destroy
   validates :name, :description, :creator_id, :presence => true
   attr_accessible :description, :image_url, :name
 
