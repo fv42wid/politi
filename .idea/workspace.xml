@@ -38,7 +38,7 @@
     <file path="/index.js.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402093160972" ignored="false" />
     <file path="/20140607205302_add_creator_id_to_candidates.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402174523815" ignored="false" />
     <file path="/devise.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402243545779" ignored="false" />
-    <file path="/confirmation_instructions.html.erb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402243915546" ignored="false" />
+    <file path="/confirmation_instructions.html.erb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402448243356" ignored="false" />
     <file path="/devise.en.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402244737745" ignored="false" />
     <file path="/database.yml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402282732446" ignored="false" />
     <file path="/application.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402257482007" ignored="false" />
@@ -62,19 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <file leaf-file-name="confirmation_instructions.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="1" selection-start="549" selection-end="549" vertical-scroll-proportion="0.5387524">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="11" column="29" selection-start="463" selection-end="463" vertical-scroll-proportion="0.32673267">
               <folding />
             </state>
           </provider>
@@ -97,7 +88,6 @@
         <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
         <option value="$PROJECT_DIR$/config/initializers/devise.en.yml" />
         <option value="$PROJECT_DIR$/config/locales/devise.en.yml" />
-        <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/issues_controller.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
@@ -106,12 +96,13 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="570" />
-    <option name="y" value="61" />
+    <option name="x" value="384" />
+    <option name="y" value="49" />
     <option name="width" value="778" />
     <option name="height" value="703" />
   </component>
@@ -860,14 +851,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="570" y="61" width="778" height="703" extended-state="0" />
+    <frame x="384" y="49" width="778" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32437277" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32342657" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37465563" sideWeight="0.67562723" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37465563" sideWeight="0.67657346" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -968,11 +959,6 @@
         <state line="20" column="52" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.53763443" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17" selection-start="17" selection-end="17" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="16" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
@@ -1039,6 +1025,13 @@
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="1" selection-start="549" selection-end="549" vertical-scroll-proportion="0.5387524">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="29" selection-start="463" selection-end="463" vertical-scroll-proportion="0.32673267">
           <folding />
         </state>
       </provider>
