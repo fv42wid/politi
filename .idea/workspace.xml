@@ -25,7 +25,7 @@
     <file path="/20140523184927_add_conflict_citation_to_issues.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400870979628" ignored="false" />
     <file path="/conflict.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400963449386" ignored="false" />
     <file path="/_conflict_form.html.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1400963490456" ignored="false" />
-    <file path="/environment.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402446364710" ignored="false" />
+    <file path="/environment.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402446981309" ignored="false" />
     <file path="/development.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401234704702" ignored="false" />
     <file path="/devise_helper.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401480567193" ignored="false" />
     <file path="/new.html.erb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401480783274" ignored="false" />
@@ -62,19 +62,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="issues_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/issues_controller.rb">
+      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
+            <state line="17" column="3" selection-start="531" selection-end="531" vertical-scroll-proportion="0.4820416">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="environment.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <file leaf-file-name="devise.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="503" selection-end="503" vertical-scroll-proportion="0.42533082">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -245,6 +245,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="politi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="politi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -925,11 +943,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1016,9 +1029,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/devise.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="503" selection-end="503" vertical-scroll-proportion="0.42533082">
+        <state line="17" column="3" selection-start="531" selection-end="531" vertical-scroll-proportion="0.4820416">
           <folding />
         </state>
       </provider>
