@@ -24,12 +24,12 @@
         %th.for_issue Supports
         %th.against_issue Against
       %tr
-        %td
+        %td.halfTable
           %table.table.table-bordered.table-hover.table-condensed.table-default
             - @for_issues.each do |issue|
               %tr
                 %td.for_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
-        %td
+        %td.halfTable
           %table.table.table-bordered.table-hover.table-condensed.table-default
             - @against_issues.each do |issue|
               %tr
