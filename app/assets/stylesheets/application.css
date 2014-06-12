@@ -45,19 +45,6 @@ body {
     padding-top: 10px;
 }
 
-#candidateNameDiv {
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.tooTall {
-    max-height: 300px;
-}
-
-.candidateBottom {
-    clear: left;
-}
-
 .conflict_issue {
     text-align: center;
     background-color: #d9edf7;

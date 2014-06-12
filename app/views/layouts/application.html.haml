@@ -37,13 +37,16 @@
               %div.pull-right
                 = link_to 'Login', new_user_session_path
     %div.container
-      %div#ads_right_side
-        = render :partial => 'layouts/adsense'
-        = render :partial => 'layouts/adsense'
+      %div.row-fluid
+        %div.span8
+          = yield
+        %div.span4
+          = render :partial => 'layouts/adsense'
+          = render :partial => 'layouts/adsense'
 
 
-      %div#main_content
+      /%div#main_content
 
-        = yield
+
 
     = render :partial => 'layouts/analytics'

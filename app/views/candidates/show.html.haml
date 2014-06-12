@@ -1,47 +1,47 @@
-%div.tooTall
-  %div#candidateNameDiv
+%div.row-fluid
+  %div.row-fluid
     %h1.image_name= @candidate.name
   %div.row-fluid
     %div.candidateImage.span4
       = image_tag @candidate.image_url, :size => "230x230"
-    %div.candidateDescriptionDiv.span8
+    %div.span8
       %p.description
         %b Description:
         = @candidate.description
 
-%div.candidateBottom
+  %div.row-fluid
 
-  = render :partial => 'layouts/flash_display'
+    = render :partial => 'layouts/flash_display'
 
-  = link_to 'Edit', edit_candidate_path(@candidate)
-  \|
-  = link_to 'Back', candidates_path
-  \|
-  = link_to 'Add Issue', new_candidate_issue_path(@candidate)
+    = link_to 'Edit', edit_candidate_path(@candidate)
+    \|
+    = link_to 'Back', candidates_path
+    \|
+    = link_to 'Add Issue', new_candidate_issue_path(@candidate)
 
-%table.table.table-bordered.table-default
-  %tr
-    %th.for_issue Supports
-    %th.against_issue Against
-  %tr
-    %td
-      %table.table.table-bordered.table-hover.table-condensed.table-default
-        - @for_issues.each do |issue|
-          %tr
-            %td.for_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
-    %td
-      %table.table.table-bordered.table-hover.table-condensed.table-default
-        - @against_issues.each do |issue|
-          %tr
-            %td.against_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
-  %tr
-    %th.conflict_issue{:colspan => 2}
-      %div.text-center Conflicted
-  %tr
-    %td{:colspan => 2}
-      %table.table.table-bordered.table-hover.table-condensed.table-default
-        - @conflict_issues.each do |issue|
-          %tr
-            %td.conflict_issue
-              %div.text-center= link_to issue.title, candidate_issue_path(@candidate, issue)
+    %table.table.table-bordered.table-default
+      %tr
+        %th.for_issue Supports
+        %th.against_issue Against
+      %tr
+        %td
+          %table.table.table-bordered.table-hover.table-condensed.table-default
+            - @for_issues.each do |issue|
+              %tr
+                %td.for_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
+        %td
+          %table.table.table-bordered.table-hover.table-condensed.table-default
+            - @against_issues.each do |issue|
+              %tr
+                %td.against_issue= link_to issue.title, candidate_issue_path(@candidate, issue)
+      %tr
+        %th.conflict_issue{:colspan => 2}
+          %div.text-center Conflicted
+      %tr
+        %td{:colspan => 2}
+          %table.table.table-bordered.table-hover.table-condensed.table-default
+            - @conflict_issues.each do |issue|
+              %tr
+                %td.conflict_issue
+                  %div.text-center= link_to issue.title, candidate_issue_path(@candidate, issue)
 
