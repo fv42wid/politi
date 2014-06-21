@@ -6,4 +6,4 @@
   - @candidates.each do |candidate|
     %tr
       %td= link_to candidate.name, candidate_path(candidate)
-      %td= candidate.description
+      %td= truncate(candidate.description, :length => 200)
