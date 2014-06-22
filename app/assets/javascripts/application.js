@@ -16,7 +16,7 @@
 
 $(document).ready(function(){
 
-    $('#candidate_search input').keyup(function() {
+    $('#candidate_search').submit(function() {
         //alert($(this).serialize());
         $.get($('#candidate_search').attr('action'), $('#candidate_search').serialize(), null, 'script');
         return false;
