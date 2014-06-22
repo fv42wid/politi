@@ -34,7 +34,7 @@
     <file path="/user.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401757298291" ignored="false" />
     <file path="/20140603010517_add_confirmation_to_users.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401757709363" ignored="false" />
     <file path="/20140603012010_add_unconfirmed_email_to_users.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1401758441763" ignored="false" />
-    <file path="/application.js" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1403465703877" ignored="false" />
+    <file path="/application.js" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1403465952355" ignored="false" />
     <file path="/index.js.haml" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402093160972" ignored="false" />
     <file path="/20140607205302_add_creator_id_to_candidates.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402174523815" ignored="false" />
     <file path="/devise.rb" changelist="3909c14b-599d-4738-b4e4-659217ca7e01" time="1402243545779" ignored="false" />
@@ -84,7 +84,7 @@
       <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="24" selection-start="697" selection-end="697" vertical-scroll-proportion="0.48387095">
+            <state line="22" column="7" selection-start="898" selection-end="898" vertical-scroll-proportion="0.5913978">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -1090,7 +1090,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="697" selection-end="697" vertical-scroll-proportion="0.48387095">
+        <state line="22" column="7" selection-start="898" selection-end="898" vertical-scroll-proportion="0.5913978">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
